@@ -23,3 +23,7 @@ java {
 application {
     mainClass = "edu.uta.unsecurecalculator.Main"
 }
+
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
+}
