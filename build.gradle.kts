@@ -21,7 +21,7 @@ java {
 }
 
 application {
-    mainClass = "edu.uta.unsecurecalculator.Main"
+    mainClass = "edu.uta.unsecurecalculator.CalculatorCLI"
 }
 
 tasks.named<JavaExec>("run") {

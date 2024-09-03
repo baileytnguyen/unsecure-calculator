@@ -3,50 +3,44 @@ package edu.uta.unsecurecalculator;
 public class UnsecureCalculator {
 
     // Field to store the last result
-    private double storedValue;
+    private float storedValue;
 
     // Constructor
     public UnsecureCalculator() {
     }
 
     // Method to add two numbers
-    public double add(double a, double b) {
+    public float add(float a, float b) {
         return a + b;
     }
 
     // Method to subtract two numbers
-    public double subtract(double a, double b) {
+    public float subtract(float a, float b) {
         return a - b;
     }
 
     // Method to multiply two numbers
-    public double multiply(double a, double b) {
+    public float multiply(float a, float b) {
         return a * b;
     }
 
     // Method to divide two numbers
-    public double divide(double a, double b) {
-        if (b == 0) {
-            throw new ArithmeticException("Cannot divide by zero.");
-        }
+    public float divide(float a, float b) {
         return a / b;
     }
 
     // Method to compute the modulo of two numbers
-    public double modulo(double a, double b) {
-        if (b == 0) {
-            throw new ArithmeticException("Cannot divide by zero.");
-        }
+    public float modulo(float a, float b) {
         return a % b;
     }
 
     // Method to store a value
-    public void store(double value) {
+    public void store(float value) {
         this.storedValue = value;
     }
 
     // Method to retrieve the stored value
-    public double retrieve() {
+    public float retrieve() {
         return this.storedValue;
     }
 
