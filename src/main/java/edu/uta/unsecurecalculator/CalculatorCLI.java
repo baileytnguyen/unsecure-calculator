@@ -13,7 +13,7 @@ public class CalculatorCLI {
 
         while (true) {
             System.out.print("> ");
-            String input = scanner.nextLine().trim();
+            String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("exit")) {
                 calculator.exit();
@@ -21,10 +21,6 @@ public class CalculatorCLI {
             }
 
             String[] tokens = input.split(" ");
-            if (tokens.length == 0) {
-                continue;
-            }
-
             String command = tokens[0].toLowerCase();
 
             switch (command) {
